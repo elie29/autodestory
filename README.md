@@ -61,7 +61,7 @@ export class AuthorComponent {
 }
 ```
 
-## Peer Dependencies
+## Peer Dependency
 
 The auto destroy pipe depends on:
 
