@@ -1,0 +1,47 @@
+{
+  "name": "@elie29/autodestroy",
+  "version": "1.0.1-alpha.0",
+  "author": "Elie NEHME",
+  "description": "A simple RxJs operator that handles subscription cancellation automatically",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elie29/autodestory"
+  },
+  "bugs": {
+    "url": "https://github.com/elie29/autodestory/issues"
+  },
+  "homepage": "https://github.com/elie29/autodestory",
+  "keywords": [
+    "angular",
+    "rxjs",
+    "pipe",
+    "takeUntil",
+    "cancel subscription",
+    "component",
+    "auto destroy"
+  ],
+  "scripts": {
+    "tsc": "tsc",
+    "build": "rm -rf dist && npm run tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "pub": "npm run build && npm publish --access public"
+  },
+  "peerDependencies": {
+    "rxjs": "^6.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/lodash": "^4.14.141",
+    "coveralls": "^3.0.6",
+    "jest": "^24.9.0",
+    "rxjs": "^6.3",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}
