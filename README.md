@@ -1,5 +1,9 @@
 # Auto Destroy
 
+[![Build Status](https://travis-ci.org/elie29/autodestroy.svg?branch=master)](https://travis-ci.org/elie29/autodestroy)
+[![Coverage Status](https://coveralls.io/repos/github/elie29/autodestroy/badge.svg?branch=master)](https://coveralls.io/github/elie29/autodestroy?branch=master)
+[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=102)](https://github.com/elie29/autodestory)
+
 ## Purpose
 
 When we use RxJS, we have to cancel all subscription objects we create. In angular, we have the possibility to use [async pipe](https://angular.io/api/common/AsyncPipe). However, in some use cases, we don't have this opportunity and we need manually to unsubscribe each subscription or complete the Observable by using takeUntil.
