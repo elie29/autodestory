@@ -7,17 +7,10 @@ export const autoDestroy = (
   instance: object,
   destroyMethod = 'ngOnDestroy'
 ) => {
+  assertDestroyExists(instance, destroyMethod);
   createSubject(instance, destroyMethod);
   return <T>(source: Observable<T>) =>
     source.pipe(takeUntil<T>(instance[autoDestroySymbol]));
-};
-
-const createSubject = (instance: object, destroyMethod: string): void => {
-  assertDestroyExists(instance, destroyMethod);
-  // should not be called twice
-  if (!instance[autoDestroySymbol]) {
-    createSubjectOnce(instance, destroyMethod);
-  }
 };
 
 const assertDestroyExists = (instance: object, destroyMethod: string): void => {
@@ -28,7 +21,7 @@ const assertDestroyExists = (instance: object, destroyMethod: string): void => {
   }
 };
 
-const createSubjectOnce = (instance, destroyMethod): void => {
+const createSubject = (instance: object, destroyMethod: string): void => {
   const current = instance[destroyMethod];
 
   instance[autoDestroySymbol] = new Subject<void>();
