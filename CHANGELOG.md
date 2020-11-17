@@ -22,4 +22,7 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
-- Nothing.
+- [#4](https://github.com/elie29/autodestroy/issues/4) Security fixes
+- [#3](https://github.com/elie29/autodestroy/pull/3) Bump handlebars from 4.4.3 to 4.7.6
+- [#2](https://github.com/elie29/autodestroy/pull/2) Bump lodash from 4.17.15 to 4.17.19
+- [#1](https://github.com/elie29/autodestroy/pull/1) Bump acorn from 5.7.3 to 5.7.4
