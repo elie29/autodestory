@@ -71,6 +71,8 @@ The auto destroy pipe depends on:
    - Subject
    - takeUntil
 
+2. Typescript 3.6.5
+
 ## Publish to npm repo
 
 1. Increment version number in package.json and package-lock.json
