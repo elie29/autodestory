@@ -1,6 +1,6 @@
 {
   "name": "@elie29/autodestroy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Elie NEHME",
   "description": "A simple RxJs operator that handles subscription cancellation automatically",
   "license": "MIT",
